@@ -1,0 +1,14 @@
+{
+  "name": "dns-api",
+  "version": "1.0.0",
+  "description": "API provides responses from DNS servers.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jaroslav Kotik",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.2"
+  }
+}
