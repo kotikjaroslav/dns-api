@@ -23,6 +23,6 @@ app.post('/resolve', (req, res) => {
 });
 
 
-app.listen(CONFIG.port, () => {
+app.listen(process.env.PORT || CONFIG.port, () => {
     console.log(`the server is listening on port ${CONFIG.port}`)
 })
