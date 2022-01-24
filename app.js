@@ -17,7 +17,7 @@ app.post('/resolve', (req, res) => {
     let domain = req.body.domain
     let type = req.body.type
 
-    dns.resolve(domain,type.toUpperCase(),(err,records)=>{
+    dns.resolve(domain,type.toUpperCase() || 'A',(err,records)=>{
         res.status(200).json(records)
     });
 });
